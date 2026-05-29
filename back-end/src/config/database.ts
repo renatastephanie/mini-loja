@@ -20,6 +20,8 @@ export const connectDatabase = async (): Promise<void> => {
   try {
     await sequelize.authenticate()
     console.log('✅ Banco de dados conectado!')
+    await sequelize.sync({ alter: true })
+    console.log('✅ Tabelas sincronizadas!')
   } catch (error) {
     console.log('❌ Erro ao conectar no banco', error)
     process.exit(1)
