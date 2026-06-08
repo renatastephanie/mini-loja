@@ -25,6 +25,7 @@ export const ProductCard = ({ product }: IProps) => {
   );
 };
 
+// STYLED COMPONENTS
 const Card = styled.div`
   background: white;
   border-radius: 12px;

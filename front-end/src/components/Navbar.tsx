@@ -15,6 +15,7 @@ export const Navbar = () => {
   </Nav>;
 };
 
+// STYLED COMPONENTS
 const Nav = styled.nav`
   display: flex;
   align-items: center;
