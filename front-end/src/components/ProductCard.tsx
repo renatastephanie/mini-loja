@@ -18,7 +18,7 @@ export const ProductCard = ({ product }: IProps) => {
         <Description>{product.description}</Description>
         <Footer>
           <Price>R$ {Number(product.price).toFixed(2)}</Price>
-          <AddButton onclick={() => addToCart(product)}>+ Carrinho</AddButton>
+          <AddButton onClick={() => addToCart(product)}>+ Carrinho</AddButton>
         </Footer>
       </Info>
     </Card>
