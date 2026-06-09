@@ -14,7 +14,7 @@ export class Order extends Model<IOrderAttributes> implements IOrderAttributes {
   declare customerName: string;
   declare customerEmail: string;
   declare total: number;
-  declare status: "peding" | "completed" | "cancelled";
+  declare status: "pending" | "completed" | "cancelled";
 }
 
 Order.init(

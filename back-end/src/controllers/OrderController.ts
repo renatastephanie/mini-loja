@@ -30,7 +30,7 @@ export const OrderController = {
       );
 
       const order = await Order.create(
-        { customerName, customerEmail, total, status: "peding" },
+        { customerName, customerEmail, total, status: "pending" },
         { transaction },
       );
 
