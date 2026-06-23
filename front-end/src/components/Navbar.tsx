@@ -6,18 +6,18 @@ export const Navbar = () => {
   const { totalItems } = useCart()
     
   return (
-      <Nav>
-        <Logo to="/">🛋️ Mini Loja</Logo>
-        <NavLinks>
-          <StyledLink to="/">Produtos</StyledLink>
-          <StyledLink to="/orders">Meus Pedidos</StyledLink>
-          <CartLink to="/cart">
-            🛒 {totalItems > 0 && <Badge>{totalItems}</Badge>}
-          </CartLink>
-        </NavLinks>
-      </Nav>
+    <Nav>
+      <Logo to="/">🛋️ Mini Loja</Logo>
+      <NavLinks>
+        <StyledLink to="/">Produtos</StyledLink>
+        <StyledLink to="/orders">Meus Pedidos</StyledLink>
+        <CartLink to="/cart">
+          🛒 {totalItems > 0 && <Badge>{totalItems}</Badge>}
+        </CartLink>
+      </NavLinks>
+    </Nav>
       
-    );
+  );
 
 };
 
