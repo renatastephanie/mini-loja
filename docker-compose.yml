@@ -31,8 +31,9 @@ services:
       DB_PASS: ${DB_PASS:-postgres}
       DB_HOST: db
       DB_PORT: 5432
+      JWT_SECRET: ${JWT_SECRET}
     ports:
-      - "3000:3000"
+      - "3333:3333"
     depends_on:
       db:
         condition: service_healthy
