@@ -21,7 +21,7 @@ User.init(
       allowNull: false,
     },
 
-    emial: {
+    email: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
