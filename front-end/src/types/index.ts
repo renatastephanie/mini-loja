@@ -31,3 +31,13 @@ export interface IOrderItem {
   product?: IProduct
 }
 
+export interface IUser{
+  id: number
+  name: string
+  email: string
+}
+
+export interface IAuthResponse {
+  token: string
+  user: IUser
+}
